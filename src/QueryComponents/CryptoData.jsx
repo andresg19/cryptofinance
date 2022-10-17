@@ -14,7 +14,7 @@ const CryptoData = () => {
   const { data, status } = useQuery("cryptos", getData);
 
   if (status === "loading") {
-    return <p>cargando</p>;
+    return <p className='text-center'>Cargando...</p>;
   }
   if (status === "error") {
     return <p>error</p>;
